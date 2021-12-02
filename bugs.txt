@@ -12,5 +12,6 @@ To do this you would simply need to check against the url
 "https://appsecclass.report/api/index")
 
 a header can be added with:   
+url: "https://appsecclass.report/api/use/<#>
 headers: {"Authorization": "Token 78b354232183fsz90sfff4vc5y79sdggmbe3571"}
 
