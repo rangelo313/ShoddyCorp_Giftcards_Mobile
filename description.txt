@@ -10,7 +10,7 @@ For this part, you should remove the possibility of other applications using Int
  To do this, changes will need to be made to the AndroidManifest.xml file.
 
 For this part, I fixed the intent in secondfragmen.kt as it used implicit intent to do the register service. The third fragment lists the correct intent used in the ProductScrollingPage. My intention to fix this is to declare the very same intent
-and replacing them with the secondfragment after the user registesr.
+and replacing them with the secondfragment after the user registers.
 
 
 
