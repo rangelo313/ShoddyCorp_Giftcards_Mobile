@@ -1,26 +1,3 @@
-<<<<<<< HEAD
-1. The two types of intents are implicit and explicit intents. 
-Implicit Intents do not directly specify the Android components which should be called, it only specifies action to be performed (ex: links). Explicit defines the exact app needed to carry out the intent. 
-2. The explicit intent is more secure due to the fact that it verifies the intent of the application and makes sure it is trustworthy. Given the example of implicit and links, it can redirect using url shorteners (or inherently) to malicious applications. 
-3. The intent shown on 69-73 (SecondFragment) is an implicit intent as it uses "Intent.ACTION_VIEW"
-4. The intent shown here is explicit as it uses the java class ProductScrollingActivity and UserInterface::class.java which is part of the internal application.
-5. Proper and more secure intent to the application is used within the explicit intent in ThirdFragment.kt as it uses ProductScrollingPage to deliver the same intent.
-
-
-For this part, you should remove the possibility of other applications using Intents to launch activities of your application.
- To do this, changes will need to be made to the AndroidManifest.xml file.
-
-For this part, I fixed the intent in secondfragmen.kt as it used implicit intent to do the register service. The third fragment lists the correct intent used in the ProductScrollingPage. My intention to fix this is to declare the very same intent
-and replacing them with the secondfragment after the user registers.
-
-
-
-I added the following to Androidmanifest.xml file to ensure that each file was separate and remove possibilites of other applications using intents to launch activities
-<permission
-        android:protectionLevel="signature"
-        android:name="GiftCardSite.permission"
-/>
-=======
 1. The two types of intents are implicit and explicit intents. 
 Implicit Intents do not directly specify the Android components which should be called, it only specifies action to be performed (ex: links). Explicit defines the exact app needed to carry out the intent. 
 2. The explicit intent is more secure due to the fact that it verifies the intent of the application and makes sure it is trustworthy. Given the example of implicit and links, it can redirect using url shorteners (or inherently) to malicious applications. 
@@ -42,4 +19,4 @@ I added the following to Androidmanifest.xml file to ensure that each file was s
         android:protectionLevel="signature"
         android:name="GiftCardSite.permission"
 />
->>>>>>> 654d6ebed55cce3ce1735edb55c28a7b6febfc65
+
