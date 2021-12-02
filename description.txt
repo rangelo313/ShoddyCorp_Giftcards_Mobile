@@ -12,6 +12,17 @@ For this part, you should remove the possibility of other applications using Int
 For this part, I fixed the intent in secondfragmen.kt as it used implicit intent to do the register service. The third fragment lists the correct intent used in the ProductScrollingPage. My intention to fix this is to declare the very same intent
 and replacing them with the secondfragment after the user registesr.
 
+   Log.d("Register Success", "Register success. Boo.")
+                        Log.d("Register Success", "Token:" + loggedInUser?.token.toString())
+                        var intent = Intent(activity, MainActivity::class.java)
+                       // intent.type = "text/giftcards_browse"
+                        //intent.data = Uri.parse("https://appsecclass.report/api/index")
+                        intent.putExtra("User", loggedInUser);
+                        startActivity(intent)
+
+                       // var intent = Intent(activity, ProductScrollingActivity::class.java)
+                       // intent.putExtra("User", loggedInUser);
+                      //  startActivity(intent)
 
 
 I added the following to Androidmanifest.xml file to ensure that each file was separate and remove possibilites of other applications using intents to launch activities
